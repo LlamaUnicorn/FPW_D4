@@ -26,7 +26,7 @@ class Product(models.Model):
         return f'{self.name.title()}: {self.description[:20]}'
 
 
-# Категория, к которой будет привязываться товар
+# Категория, к которой будет привязываться товар 1
 class Category(models.Model):
     # названия категорий тоже не должны повторяться
     name = models.CharField(max_length=100, unique=True)
